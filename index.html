@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js");}</script>
+    <link rel="stylesheet" href="assets/css/motion.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leeward Support Services | Simplifying Your Success</title>
+    <meta
+      name="description"
+      content="Leeward Support Services W.L.L is a Bahrain-based provider of manpower, facilities management, naval-base support, and HVAC services."
+    />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                DEFAULT: "#0F2A44",
+                deep: "#07111C",
+                mid: "#16324C",
+              },
+              gold: {
+                DEFAULT: "#C9A44C",
+                deep: "#A68532",
+              },
+              mist: "#F4F6F8",
+              ink: "#3E4E5E",
+            },
+            fontFamily: {
+              display: ["Catamaran", "sans-serif"],
+              sans: ["Montserrat", "sans-serif"],
+            },
+            boxShadow: {
+              card: "0 18px 50px rgba(7, 17, 28, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      #site-header.is-solid {
+        background: #fff;
+        box-shadow: 0 1px 0 rgba(15, 42, 68, 0.08);
+      }
+      #site-header.is-solid .nav-link { color: #0F2A44; }
+      #site-header.is-solid .nav-link:hover,
+      #site-header.is-solid .nav-link[aria-current="page"] { color: #A68532; }
+      #site-header.is-solid .menu-btn { color: #0F2A44; }
+      .tab-btn[aria-selected="true"] {
+        color: #0F2A44;
+        border-color: #0F2A44;
+      }
+      .heading-shine {
+        background-image: linear-gradient(
+          110deg,
+          #e7eef4 0%,
+          #e7eef4 38%,
+          #ffffff 48%,
+          #f6e4b0 52%,
+          #ffffff 56%,
+          #e7eef4 66%,
+          #e7eef4 100%
+        );
+        background-size: 220% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: heading-shine 5.5s ease-in-out infinite;
+      }
+      .banner-photo {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+      .banner-photo.is-active {
+        opacity: 1;
+        animation: kenburns 8s ease-out forwards;
+      }
+      @keyframes kenburns {
+        from { transform: scale(1) translate3d(0, 0, 0); }
+        to { transform: scale(1.14) translate3d(-2%, -1.2%, 0); }
+      }
+      @media (max-width: 1023px) {
+        #top .banner-panel > p:first-child { margin-bottom: 0.4rem; letter-spacing: 0.16em; }
+        #top .banner-panel h1,
+        #top .banner-panel h2 { font-size: 2.35rem; line-height: 0.92; }
+        #top .banner-panel > p.mt-6 { margin-top: 0.7rem; font-size: 0.92rem; line-height: 1.45; }
+        #top .banner-panel > div { margin-top: 0.9rem; }
+        #top .banner-panel a { padding: 0.65rem 1.15rem; }
+        #top .banner-controls { margin-top: 1rem; }
+        #top .banner-controls > button { height: 2.5rem; width: 2.5rem; }
+      }
+      .banner-dot {
+        height: 0.45rem;
+        width: 0.45rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.4);
+        transition: width 0.25s ease, background-color 0.25s ease;
+      }
+      .banner-dot[aria-current="true"] {
+        width: 1.6rem;
+        background: #C9A44C;
+      }
+      .include-list > li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.55rem;
+      }
+      .include-list > li::before {
+        content: "";
+        flex: none;
+        width: 1.05rem;
+        height: 1.05rem;
+        margin-top: 0.12rem;
+        background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A44C' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.2 4.2L19 7.5'/%3E%3C/svg%3E");
+      }
+      @keyframes heading-shine {
+        0% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        * { transition: none !important; animation: none !important; }
+      }
+    </style>
+  </head>
+  <body class="bg-white font-sans text-navy antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-gold focus:px-4 focus:py-2 focus:text-navy"
+      >Skip to content</a
+    >
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-colors duration-300">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-5 lg:px-8">
+        <a href="index.html" class="shrink-0" aria-label="Leeward home">
+          <img id="logo" src="assets/logo-white.png" alt="Leeward. Simplifying Your Success." class="h-11 w-auto sm:h-12" />
+        </a>
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          <div class="group relative">
+            <a class="nav-link inline-flex items-center gap-1 text-sm font-medium text-white/90 transition hover:text-gold" href="#services">Services
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="invisible absolute left-0 top-full z-20 w-72 pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div class="rounded-2xl bg-white p-2 text-navy shadow-card">
+                <a class="block rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-mist" href="manpower.html">Manpower &amp; workforce</a>
+                <a class="block rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-mist" href="facilities.html">Facilities &amp; maintenance</a>
+                <a class="block rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-mist" href="naval-base.html">Naval base &amp; defense</a>
+                <a class="block rounded-xl px-3 py-2.5 text-sm font-medium hover:bg-mist" href="hvac.html">HVAC &amp; refrigeration</a>
+              </div>
+            </div>
+          </div>
+          <a class="nav-link text-sm font-medium text-white/90 transition hover:text-gold" href="about.html">About</a>
+          <a class="nav-link text-sm font-medium text-white/90 transition hover:text-gold" href="blog/index.html">Blog</a>
+          <a class="nav-link text-sm font-medium text-white/90 transition hover:text-gold" href="faq.html">FAQ</a>
+          <a class="nav-link text-sm font-medium text-white/90 transition hover:text-gold" href="contact.html">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="hidden rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white sm:inline-flex"
+            >Request support</a
+          >
+          <button
+            id="menu-toggle"
+            class="menu-btn inline-flex h-11 w-11 items-center justify-center rounded-full text-white lg:hidden"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="sr-only">Open menu</span>
+            <svg id="icon-open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <svg id="icon-close" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden border-t border-navy/10 bg-white lg:hidden">
+        <nav class="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4" aria-label="Mobile">
+          <p class="px-3 pt-2 text-xs font-semibold uppercase tracking-[0.16em] text-gold-deep">Services</p>
+          <a class="rounded-xl px-3 py-2 text-sm font-medium text-ink hover:bg-mist" href="manpower.html">Manpower &amp; workforce</a>
+          <a class="rounded-xl px-3 py-2 text-sm font-medium text-ink hover:bg-mist" href="facilities.html">Facilities &amp; maintenance</a>
+          <a class="rounded-xl px-3 py-2 text-sm font-medium text-ink hover:bg-mist" href="naval-base.html">Naval base &amp; defense</a>
+          <a class="rounded-xl px-3 py-2 text-sm font-medium text-ink hover:bg-mist" href="hvac.html">HVAC &amp; refrigeration</a>
+          <a class="rounded-xl px-3 py-3 text-base font-medium hover:bg-mist" href="about.html">About</a>
+          <a class="rounded-xl px-3 py-3 text-base font-medium hover:bg-mist" href="blog/index.html">Blog</a>
+          <a class="rounded-xl px-3 py-3 text-base font-medium hover:bg-mist" href="faq.html">FAQ</a>
+          <a class="rounded-xl px-3 py-3 text-base font-medium hover:bg-mist" href="contact.html">Contact</a>
+          <a class="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-navy" href="contact.html">Request support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="relative min-h-screen overflow-hidden bg-navy-deep" aria-roledescription="carousel" aria-label="Leeward services">
+        <div class="absolute inset-0 overflow-hidden">
+          <img
+            class="banner-photo is-active object-[72%_center]"
+            src="assets/hero.jpg"
+            alt="A technician welding on site, representing hands-on technical support."
+            data-parallax
+            fetchpriority="high"
+          />
+          <img class="banner-photo object-center" src="assets/manpower.jpg" alt="" aria-hidden="true" />
+          <img class="banner-photo object-center" src="assets/facilities.jpg" alt="" aria-hidden="true" />
+          <img class="banner-photo object-[center_40%]" src="assets/defense.jpg" alt="" aria-hidden="true" />
+          <img class="banner-photo object-center" src="assets/hvac.jpg" alt="" aria-hidden="true" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/15 lg:bg-gradient-to-r lg:from-navy-deep lg:via-navy-deep/92 lg:to-navy-deep/25"></div>
+        <div class="relative mx-auto flex min-h-screen max-w-7xl items-end px-5 pb-6 pt-24 lg:items-center lg:px-8 lg:pb-28 lg:pt-32">
+          <div class="w-full max-w-xl">
+            <div class="banner-panel is-active">
+              <p data-hero="eyebrow" class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">Bahrain &middot; Support services</p>
+              <h1 data-hero="title" class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                <span class="hero-line"><span>Simplifying</span></span>
+                <span class="hero-line"><span>your</span></span>
+                <span class="hero-line"><span>success</span></span>
+              </h1>
+              <p data-hero="copy" class="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
+                Manpower, facilities, naval-base, and HVAC support for operations that need dependable people and clear accountability.
+              </p>
+              <div data-hero="cta" class="mt-9 flex flex-wrap gap-3">
+                <a href="#services" class="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white">Explore services</a>
+                <a href="contact.html" class="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-navy">Talk with us</a>
+              </div>
+            </div>
+            <div class="banner-panel" hidden>
+              <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">Manpower</p>
+              <h2 class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">Manpower &amp; workforce</h2>
+              <p class="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">Skilled and unskilled recruitment, deployment, and management for trades, warehouses, facilities, security, dining, and administration.</p>
+              <div class="mt-9 flex flex-wrap gap-3">
+                <a href="manpower.html" class="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white">View this service</a>
+                <a href="contact.html?service=manpower" class="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-navy">Talk with us</a>
+              </div>
+            </div>
+            <div class="banner-panel" hidden>
+              <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">Facilities</p>
+              <h2 class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">Facilities &amp; maintenance</h2>
+              <p class="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">Facility care that keeps operations clean, safe, and functional, from routine cleaning through minor-to-medium repairs.</p>
+              <div class="mt-9 flex flex-wrap gap-3">
+                <a href="facilities.html" class="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white">View this service</a>
+                <a href="contact.html?service=facilities" class="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-navy">Talk with us</a>
+              </div>
+            </div>
+            <div class="banner-panel" hidden>
+              <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">Naval base</p>
+              <h2 class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">Naval base &amp; defense</h2>
+              <p class="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">Specialized support for naval-base and defense environments, including logistics, sanitation, vetted staff, and dining-facility staffing.</p>
+              <div class="mt-9 flex flex-wrap gap-3">
+                <a href="naval-base.html" class="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white">View this service</a>
+                <a href="contact.html?service=naval" class="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-navy">Talk with us</a>
+              </div>
+            </div>
+            <div class="banner-panel" hidden>
+              <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">HVAC</p>
+              <h2 class="font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">HVAC &amp; refrigeration</h2>
+              <p class="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">Design, installation, maintenance, and emergency repair for climate-control systems, including chillers and cold storage.</p>
+              <div class="mt-9 flex flex-wrap gap-3">
+                <a href="hvac.html" class="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-deep hover:text-white">View this service</a>
+                <a href="contact.html?service=hvac" class="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white hover:text-navy">Talk with us</a>
+              </div>
+            </div>
+            <div class="banner-controls mt-10 flex items-center gap-3">
+              <button id="banner-prev" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition hover:bg-white hover:text-navy" aria-label="Previous slide">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="flex items-center gap-2" role="group" aria-label="Choose a slide">
+                <button type="button" class="banner-dot" aria-label="Simplifying your success" aria-current="true"></button>
+                <button type="button" class="banner-dot" aria-label="Manpower and workforce"></button>
+                <button type="button" class="banner-dot" aria-label="Facilities and maintenance"></button>
+                <button type="button" class="banner-dot" aria-label="Naval base and defense"></button>
+                <button type="button" class="banner-dot" aria-label="HVAC and refrigeration"></button>
+              </div>
+              <button id="banner-next" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition hover:bg-white hover:text-navy" aria-label="Next slide">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button id="banner-pause" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition hover:bg-white hover:text-navy" aria-pressed="false" aria-label="Pause slides">
+                <svg id="banner-pause-icon" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+                <svg id="banner-play-icon" class="hidden h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-navy-deep pb-8 pt-20 text-white">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <h2 class="heading-shine text-center font-display text-4xl font-extrabold sm:text-5xl">Services built around the work</h2>
+          <div class="relative mt-12">
+            <div id="service-track" class="no-scrollbar flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-4">
+              <a href="manpower.html" class="service-card block w-[min(100%,340px)] shrink-0 snap-start overflow-hidden rounded-3xl bg-white text-navy shadow-card">
+                <img src="assets/manpower.jpg" alt="A warehouse floor prepared for workforce and logistics operations." class="h-52 w-full object-cover" />
+                <div class="p-6">
+                  <h3 class="font-display text-2xl font-extrabold">Manpower &amp; workforce</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-ink">Skilled and unskilled recruitment, deployment, and management for trades, warehouses, facilities, security, dining, and administration.</p>
+                </div>
+              </a>
+              <a href="facilities.html" class="service-card block w-[min(100%,340px)] shrink-0 snap-start overflow-hidden rounded-3xl bg-white text-navy shadow-card">
+                <img src="assets/facilities.jpg" alt="A facilities team member cleaning and caring for a building interior." class="h-52 w-full object-cover" />
+                <div class="p-6">
+                  <h3 class="font-display text-2xl font-extrabold">Facilities &amp; maintenance</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-ink">Facility care that keeps operations clean, safe, and functional, from routine cleaning through minor-to-medium repairs.</p>
+                </div>
+              </a>
+              <a href="naval-base.html" class="service-card block w-[min(100%,340px)] shrink-0 snap-start overflow-hidden rounded-3xl bg-white text-navy shadow-card">
+                <img src="assets/defense.jpg" alt="A working port with cargo ships and cranes, representing logistics support." class="h-52 w-full object-cover" />
+                <div class="p-6">
+                  <h3 class="font-display text-2xl font-extrabold">Naval base &amp; defense</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-ink">Specialized support for naval-base and defense environments, including logistics, sanitation, vetted staff, and dining-facility staffing.</p>
+                </div>
+              </a>
+              <a href="hvac.html" class="service-card block w-[min(100%,340px)] shrink-0 snap-start overflow-hidden rounded-3xl bg-white text-navy shadow-card">
+                <img src="assets/hvac.jpg" alt="A technician in a hard hat servicing building equipment." class="h-52 w-full object-cover" />
+                <div class="p-6">
+                  <h3 class="font-display text-2xl font-extrabold">HVAC &amp; refrigeration</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-ink">Design, installation, maintenance, and emergency repair for climate-control systems, including chillers and cold storage.</p>
+                </div>
+              </a>
+            </div>
+            <div class="mt-2 flex justify-end gap-2">
+              <button id="cards-prev" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white hover:text-navy" aria-label="Previous services">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button id="cards-next" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white hover:text-navy" aria-label="Next services">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="bg-navy-deep pb-28 pt-16 text-white">
+        <div class="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-2 lg:px-8">
+          <div>
+            <h2 class="font-display text-4xl font-extrabold text-[#D5DDE6] sm:text-5xl">Why Leeward</h2>
+            <p data-count="20" data-suffix="+" class="mt-10 font-display text-6xl font-extrabold leading-none text-gold">20+</p>
+            <p class="mt-3 max-w-xs text-sm leading-relaxed text-white/70">Years of team experience in US Navy support services and military installation operations.</p>
+          </div>
+          <div class="border-white/15 lg:border-l lg:pl-12">
+            <p class="font-display text-6xl font-extrabold leading-none text-gold">24/7</p>
+            <p class="mt-3 max-w-sm text-sm leading-relaxed text-white/70">Emergency support for HVAC and other critical operational requirements.</p>
+            <p data-count="4" class="mt-10 font-display text-6xl font-extrabold leading-none text-gold">4</p>
+            <p class="mt-3 max-w-sm text-sm leading-relaxed text-white/70">Service lines covering workforce, facilities, naval-base support, and climate control.</p>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-20 grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+          <div class="overflow-hidden rounded-3xl bg-white p-3">
+            <img data-reveal="image" src="assets/manpower.jpg" alt="Organized warehouse operations that depend on a reliable workforce." class="h-80 w-full rounded-2xl object-cover sm:h-[420px]" />
+          </div>
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold" aria-hidden="true">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7V6a4 4 0 118 0v1M6 10h12v9a2 2 0 01-2 2H8a2 2 0 01-2-2v-9z" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display text-2xl font-extrabold">Flexible workforce solutions</h3>
+                <p class="mt-2 text-sm leading-relaxed text-white/70">Daily, monthly, or project-based staffing that scales with operational demand, with full labor-law and safety compliance.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold" aria-hidden="true">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-2.8 7.4-7 9-4.2-1.6-7-4.5-7-9V6l7-3z" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display text-2xl font-extrabold">Safe, compliant facilities</h3>
+                <p class="mt-2 text-sm leading-relaxed text-white/70">Professional facility support focused on cleanliness, safety, and regulatory compliance so sites stay ready for use.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold" aria-hidden="true">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v4l2.5 2.5M12 21a9 9 0 100-18 9 9 0 000 18z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3 class="font-display text-2xl font-extrabold">Operational reliability</h3>
+                <p class="mt-2 text-sm leading-relaxed text-white/70">Support designed to maintain continuity, reduce downtime, and keep equipment and people performing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative z-10 -mt-10 bg-navy-deep pb-20" aria-labelledby="detail-heading">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="rounded-[2rem] bg-mist px-6 py-12 sm:px-10 lg:px-14 lg:py-16">
+            <h2 id="detail-heading" class="max-w-3xl font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Support across the work that keeps you running</h2>
+            <div class="mt-8 flex items-end justify-between gap-4 border-b border-navy/10">
+              <div class="no-scrollbar -mb-px flex gap-6 overflow-x-auto" role="tablist" aria-label="Service details">
+                <button class="tab-btn whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-semibold text-ink" role="tab" aria-selected="true" aria-controls="panel-manpower" id="tab-manpower" data-tab="manpower">Manpower</button>
+                <button class="tab-btn whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-semibold text-ink" role="tab" aria-selected="false" aria-controls="panel-facilities" id="tab-facilities" data-tab="facilities">Facilities</button>
+                <button class="tab-btn whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-semibold text-ink" role="tab" aria-selected="false" aria-controls="panel-naval" id="tab-naval" data-tab="naval">Naval base</button>
+                <button class="tab-btn whitespace-nowrap border-b-2 border-transparent pb-3 text-sm font-semibold text-ink" role="tab" aria-selected="false" aria-controls="panel-hvac" id="tab-hvac" data-tab="hvac">HVAC</button>
+              </div>
+            </div>
+
+            <div class="mt-8 grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+              <div>
+                <div id="panel-manpower" role="tabpanel" aria-labelledby="tab-manpower">
+                  <p class="max-w-xl text-base leading-relaxed text-ink">Skilled and unskilled workforce recruitment, deployment, and management for trades, warehouses, facilities, security, dining, and administration.</p>
+                  <p class="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-navy">What this includes</p>
+                  <ul class="include-list mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="manpower.html">Daily, monthly, or project-based staffing</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="manpower.html">Full labor-law and safety compliance</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="manpower.html">Staff trained in Maximo asset-management software</a></li>
+                  </ul>
+                </div>
+                <div id="panel-facilities" class="hidden" role="tabpanel" aria-labelledby="tab-facilities">
+                  <p class="max-w-xl text-base leading-relaxed text-ink">Comprehensive facility care to keep your operations clean, safe, and functional.</p>
+                  <p class="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-navy">What this includes</p>
+                  <ul class="include-list mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="facilities.html">Routine and deep cleaning, sanitization, post-construction cleanup</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="facilities.html">Floor and glass care, waste disposal</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="facilities.html">Repairs, finishing, civil work, painting, tiling, and plumbing</a></li>
+                  </ul>
+                </div>
+                <div id="panel-naval" class="hidden" role="tabpanel" aria-labelledby="tab-naval">
+                  <p class="max-w-xl text-base leading-relaxed text-ink">Specialized support tailored to naval-base and defense environments, shaped by experience in structured, security-conscious operations.</p>
+                  <p class="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-navy">What this includes</p>
+                  <ul class="include-list mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="naval-base.html">Logistics and maintenance support</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="naval-base.html">Sanitation and dining-facility staffing</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="naval-base.html">Vetted technical staff and emergency support</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="naval-base.html">Sponsorship services and non-tactical vehicle leasing</a></li>
+                  </ul>
+                </div>
+                <div id="panel-hvac" class="hidden" role="tabpanel" aria-labelledby="tab-hvac">
+                  <p class="max-w-xl text-base leading-relaxed text-ink">Design, installation, maintenance, and emergency repair for climate-control systems that operations depend on.</p>
+                  <p class="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-navy">What this includes</p>
+                  <ul class="include-list mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="hvac.html">Central air conditioning, VRF/VRV, chillers, and cold storage</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="hvac.html">Energy audits and retrofits</a></li>
+                    <li><a class="text-sm font-medium text-navy-mid hover:text-gold-deep" href="hvac.html">24/7 emergency HVAC support</a></li>
+                  </ul>
+                </div>
+                <a id="service-page-link" href="manpower.html" class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-navy hover:text-gold-deep">View this service <span aria-hidden="true">&rarr;</span></a>
+              </div>
+              <div class="relative mx-auto hidden h-80 w-full max-w-md lg:block">
+                <img id="tab-photo" src="assets/manpower.jpg" alt="" class="absolute right-6 top-4 h-64 w-64 rounded-[2rem] object-cover shadow-card" />
+                <img src="assets/hvac.jpg" alt="" class="absolute bottom-0 right-0 h-28 w-28 rounded-2xl object-cover ring-4 ring-mist" />
+                <img src="assets/facilities.jpg" alt="" class="absolute bottom-8 left-0 h-24 w-24 rounded-2xl object-cover ring-4 ring-mist" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="bg-mist py-20">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-gold-deep">Company</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight">Two decades of relevant industry experience</h2>
+            <p class="mt-5 text-base leading-relaxed text-ink">Leeward Support Services W.L.L is a Bahrain-based provider of manpower, facilities management, contracting, and technical support services. The company was established by experienced professionals with over 20 years of collective hands-on experience in US Navy support services and military installation operations.</p>
+            <p class="mt-4 text-base leading-relaxed text-ink">That experience covers operational management, service delivery, and the standards expected in demanding military environments, including US and UK naval-base settings and DODDS-related operations. It includes military procedures, access control, confidentiality, personnel vetting, safety, and compliance.</p>
+          </div>
+          <img src="assets/hero.jpg" alt="A technician at work on site." class="h-80 w-full rounded-[2rem] object-cover shadow-card sm:h-[460px]" />
+        </div>
+      </section>
+
+      <section class="bg-white py-20" aria-labelledby="value-heading">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <h2 id="value-heading" class="text-center font-display text-4xl font-extrabold tracking-tight sm:text-5xl">What clients can count on</h2>
+          <ul class="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="25" r="15" fill="#C9A44C"/><circle cx="24" cy="25" r="11" fill="#F4F6F8"/><path d="M24 18v8l6 3" fill="none" stroke="#0F2A44" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="26" r="2" fill="#C9A44C"/><rect x="22" y="6" width="4" height="5" rx="1" fill="#0F2A44"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">20+ years of experience</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Extensive expertise in US Navy support services and military installation operations.</p>
+              <a href="about.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l16 6v11c0 9-6.4 14.6-16 19C14.4 37.6 8 32 8 23V12z" fill="#0F2A44"/><path d="M24 11l11 4v8.5c0 6.2-4.4 10.2-11 13.2-6.6-3-11-7-11-13.2V15z" fill="#1C4B73"/><path d="M18 24.5l4.2 4.2 8.2-9" fill="none" stroke="#C9A44C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Trained and vetted personnel</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Familiar with military protocols, access requirements, and security standards.</p>
+              <a href="naval-base.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="16" r="6" fill="#C9A44C"/><circle cx="31" cy="18" r="5" fill="#7EB6D9"/><path d="M6 38c1.2-8 6-12 11-12s9.6 4 11 12z" fill="#0F2A44"/><path d="M26 38c.8-6 3.6-9 7-9s6 2.6 7.2 9z" fill="#1C4B73"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Flexible workforce</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Scalable staffing to meet changing operational demands.</p>
+              <a href="manpower.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="26" r="13" fill="#C9A44C"/><circle cx="20" cy="26" r="8" fill="#F6E7C1"/><path d="M20 22v5h4" fill="none" stroke="#0F2A44" stroke-width="2.2" stroke-linecap="round"/><circle cx="34" cy="16" r="8" fill="#2A9D8F"/><path d="M34 12.5v4l2.4 1.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Cost and time efficiency</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Reduced recruitment costs, operational delays, and downtime.</p>
+              <a href="manpower.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20L24 8l16 12v2H8z" fill="#E07A5F"/><rect x="12" y="22" width="24" height="18" rx="2" fill="#0F2A44"/><rect x="16" y="26" width="5" height="5" rx="1" fill="#F6E7C1"/><rect x="27" y="26" width="5" height="5" rx="1" fill="#7EB6D9"/><rect x="20" y="31" width="8" height="9" rx="1" fill="#C9A44C"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Safe, compliant facilities</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Professional facility support focused on cleanliness, safety, and regulatory compliance.</p>
+              <a href="facilities.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="15" fill="#2A9D8F"/><circle cx="24" cy="24" r="11" fill="#F4F6F8"/><path d="M16 24.5l5 5 11-12" fill="none" stroke="#2A9D8F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Operational reliability</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Support designed to enhance readiness, maintain equipment, and improve performance.</p>
+              <a href="about.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="13" fill="#E07A5F"/><circle cx="24" cy="26" r="9" fill="#fff"/><path d="M24 20.5V27l4 2" fill="none" stroke="#E07A5F" stroke-width="2.4" stroke-linecap="round"/><path d="M13 14L9 10M35 14l4-4" stroke="#C9A44C" stroke-width="3" stroke-linecap="round"/><circle cx="36" cy="14" r="6" fill="#0F2A44"/><path d="M36 11.2v3.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="36" cy="16.6" r="0.9" fill="#fff"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">24/7 emergency support</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Responsive assistance for HVAC and other critical operational requirements.</p>
+              <a href="hvac.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+            <li>
+              <svg class="h-20 w-20" viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="22" r="12" fill="#1C4B73"/><ellipse cx="20" cy="22" rx="5" ry="12" fill="none" stroke="#7EB6D9" stroke-width="1.8"/><path d="M8 22h24" stroke="#7EB6D9" stroke-width="1.8"/><path d="M32 20c0-5 5-8 5-8s5 3 5 8-5 10-5 10-5-5-5-10z" fill="#C9A44C"/><circle cx="37" cy="20" r="1.7" fill="#fff"/></svg>
+              <h3 class="mt-5 font-display text-xl font-extrabold">Local expertise</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ink">Bahrain-based delivery aligned with high standards of quality and professionalism.</p>
+              <a href="contact.html" class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-mid hover:text-gold-deep">Learn more <span aria-hidden="true">&rarr;</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-mist py-20">
+        <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.22em] text-gold-deep">Start a conversation</p>
+            <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Tell us what the operation needs</h2>
+            <p class="mt-4 max-w-md text-base leading-relaxed text-ink">Share the scope, the site, and the timeline. We will respond with a practical way to staff, maintain, or support the work.</p>
+            <ul class="mt-8 space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.2"/></svg>
+                <span class="leading-relaxed text-ink">Office 12, Building 1042, Road 3621, Block 436, Al Seef, Manama, Kingdom of Bahrain</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 4.5h2.2l1.1 2.8-1.6 1a11.5 11.5 0 005 5l1-1.6 2.8 1.1V15a1.8 1.8 0 01-1.6 1.8A13.2 13.2 0 016.2 6.1 1.8 1.8 0 018 4.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <a class="font-semibold text-navy hover:text-gold-deep" href="tel:+97317552140">+973 1755 2140</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16v10H4z" stroke-linejoin="round"/><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <a class="font-semibold text-navy hover:text-gold-deep" href="mailto:info@leeward.bh">info@leeward.bh</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-gold-deep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18.5l-1.6 3.1 3.2-1.5A8.2 8.2 0 1012 4.8a8.2 8.2 0 00-6 13.7z" stroke-linejoin="round"/><path d="M9.2 11.4c.4 1.8 1.9 3.1 3.6 3.5" stroke-linecap="round"/></svg>
+                <a class="font-semibold text-navy hover:text-gold-deep" href="https://wa.me/97339402140" rel="noopener noreferrer">WhatsApp +973 3940 2140</a>
+              </li>
+            </ul>
+          </div>
+          <form id="contact-form" class="rounded-[2rem] bg-white p-6 shadow-card sm:p-8" novalidate>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block text-sm font-medium">
+                Name
+                <input name="name" required autocomplete="name" class="mt-1.5 w-full rounded-xl border border-navy/10 bg-white px-4 py-3 text-sm outline-none ring-gold focus:ring-2" />
+              </label>
+              <label class="block text-sm font-medium">
+                Organisation
+                <input name="organisation" autocomplete="organization" class="mt-1.5 w-full rounded-xl border border-navy/10 bg-white px-4 py-3 text-sm outline-none ring-gold focus:ring-2" />
+              </label>
+              <label class="block text-sm font-medium sm:col-span-2">
+                Phone
+                <input name="phone" type="tel" inputmode="tel" autocomplete="tel" class="mt-1.5 w-full rounded-xl border border-navy/10 bg-white px-4 py-3 text-sm outline-none ring-gold focus:ring-2" />
+              </label>
+            </div>
+            <label class="mt-4 block text-sm font-medium">
+              Service of interest
+              <select name="service" class="mt-1.5 w-full rounded-xl border border-navy/10 bg-white px-4 py-3 text-sm outline-none ring-gold focus:ring-2">
+                <option value="manpower">Manpower &amp; workforce solutions</option>
+                <option value="facilities">Facilities &amp; maintenance</option>
+                <option value="naval">Naval base &amp; defense support</option>
+                <option value="hvac">HVAC &amp; refrigeration</option>
+                <option value="general">Not sure yet</option>
+              </select>
+            </label>
+            <label class="mt-4 block text-sm font-medium">
+              How can we help?
+              <textarea name="message" required rows="4" class="mt-1.5 w-full rounded-xl border border-navy/10 bg-white px-4 py-3 text-sm outline-none ring-gold focus:ring-2"></textarea>
+            </label>
+            <button type="submit" class="mt-5 rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-gold hover:text-navy">Send request</button>
+            <p id="form-note" class="mt-4 hidden text-sm font-medium text-navy" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy-deep text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div>
+          <img src="assets/logo-white.png" alt="Leeward" class="h-12 w-auto" />
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-white/65">Manpower, facilities, naval-base, and technical support. Simplifying your success.</p>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-gold">Services</h2>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li><a class="hover:text-white" href="manpower.html">Manpower &amp; workforce</a></li>
+            <li><a class="hover:text-white" href="facilities.html">Facilities &amp; maintenance</a></li>
+            <li><a class="hover:text-white" href="naval-base.html">Naval base &amp; defense</a></li>
+            <li><a class="hover:text-white" href="hvac.html">HVAC &amp; refrigeration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-gold">Company</h2>
+          <ul class="mt-4 space-y-2 text-sm text-white/75">
+            <li><a class="hover:text-white" href="about.html">About</a></li>
+            <li><a class="hover:text-white" href="about.html#values">Core values</a></li>
+            <li><a class="hover:text-white" href="blog/index.html">Blog</a></li>
+            <li><a class="hover:text-white" href="faq.html">FAQ</a></li>
+            <li><a class="hover:text-white" href="index.html#why">Why Leeward</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold uppercase tracking-[0.16em] text-gold">Contact</h2>
+          <ul class="mt-4 space-y-3 text-sm text-white/75">
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.2"/></svg>
+              <span>Office 12, Building 1042, Road 3621, Block 436, Al Seef, Manama, Kingdom of Bahrain</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 4.5h2.2l1.1 2.8-1.6 1a11.5 11.5 0 005 5l1-1.6 2.8 1.1V15a1.8 1.8 0 01-1.6 1.8A13.2 13.2 0 016.2 6.1 1.8 1.8 0 018 4.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a class="hover:text-white" href="tel:+97317552140">+973 1755 2140</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16v10H4z" stroke-linejoin="round"/><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a class="hover:text-white" href="mailto:info@leeward.bh">info@leeward.bh</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 18.5l-1.6 3.1 3.2-1.5A8.2 8.2 0 1012 4.8a8.2 8.2 0 00-6 13.7z" stroke-linejoin="round"/><path d="M9.2 11.4c.4 1.8 1.9 3.1 3.6 3.5" stroke-linecap="round"/></svg>
+              <a class="hover:text-white" href="https://wa.me/97339402140" rel="noopener noreferrer">WhatsApp +973 3940 2140</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10">
+        <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-white/50 sm:flex-row sm:justify-between lg:px-8">
+          <p>&copy; <span id="year"></span> Leeward Support Services W.L.L</p>
+          <p class="flex gap-4"><a class="hover:text-white" href="privacy.html">Privacy</a><a class="hover:text-white" href="terms.html">Terms</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const track = document.getElementById("service-track");
+      const scrollCards = (dir) => {
+        const card = track.querySelector(".service-card");
+        track.scrollBy({ left: dir * (card.offsetWidth + 20), behavior: "smooth" });
+      };
+      document.getElementById("cards-prev").addEventListener("click", () => scrollCards(-1));
+      document.getElementById("cards-next").addEventListener("click", () => scrollCards(1));
+
+      const photos = {
+        manpower: "assets/manpower.jpg",
+        facilities: "assets/facilities.jpg",
+        naval: "assets/defense.jpg",
+        hvac: "assets/hvac.jpg",
+      };
+      const pages = {
+        manpower: "manpower.html",
+        facilities: "facilities.html",
+        naval: "naval-base.html",
+        hvac: "hvac.html",
+      };
+      const tabPhoto = document.getElementById("tab-photo");
+      const serviceLink = document.getElementById("service-page-link");
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-btn").forEach((b) => b.setAttribute("aria-selected", "false"));
+          document.querySelectorAll("[role='tabpanel']").forEach((panel) => panel.classList.add("hidden"));
+          btn.setAttribute("aria-selected", "true");
+          document.getElementById("panel-" + btn.dataset.tab).classList.remove("hidden");
+          tabPhoto.src = photos[btn.dataset.tab];
+          serviceLink.href = pages[btn.dataset.tab];
+        });
+      });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

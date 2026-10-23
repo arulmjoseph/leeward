@@ -1,0 +1,79 @@
+/* Motion polish. Visual layout stays put; only transform and opacity move. */
+.hero-line {
+  display: block;
+  overflow: hidden;
+}
+.hero-line > span {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-hero] {
+    opacity: 0;
+  }
+
+  @media (min-width: 768px) {
+    html.js [data-parallax]:not(.banner-photo) {
+      transform: scale(1.06);
+      transform-origin: center center;
+    }
+  }
+
+  #site-header .group > div.absolute {
+    transform: translateY(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  }
+
+  #site-header .group:hover > div.absolute,
+  #site-header .group:focus-within > div.absolute {
+    transform: translateY(0);
+  }
+
+  #mobile-menu.is-open {
+    animation: menu-in 0.28s ease;
+  }
+
+  .service-card img,
+  section.bg-mist .grid > a img {
+    transition: transform 0.4s ease;
+  }
+
+  .service-card:hover img,
+  section.bg-mist .grid > a:hover img {
+    transform: scale(1.025);
+  }
+
+  a > span[aria-hidden="true"] {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  a:hover > span[aria-hidden="true"] {
+    transform: translateX(5px);
+  }
+
+  #site-header .nav-link,
+  footer a:not(.rounded-full) {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: background-size 0.3s ease, color 0.2s ease;
+  }
+
+  #site-header .nav-link:hover,
+  footer a:not(.rounded-full):hover {
+    background-size: 100% 1px;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
